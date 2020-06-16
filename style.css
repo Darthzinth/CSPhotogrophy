@@ -70,10 +70,11 @@ box {
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: #555;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
+    text-align: center
 }
 h2 {
     font-size: 180%;
@@ -85,6 +86,29 @@ h2 {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+}
+/*-----ASPECT RATIO-----*/
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
 }
 /* --------------------------------------- */
 /* HEADER */
@@ -120,38 +144,6 @@ nav {
 /* --------------------------------------- */
 /* TEN IMAGES */
 /* --------------------------------------- */
-.ten-images-showcase {
-    margin: 0;
-    list-style: none;
-    display: block;
-	float:left;
-}
-.img-10 {
-    padding: 0;
-    margin: 0;
-    background-color: #000;
-    overflow: hidden;
-}
-.img-10 img {
-    margin: 0;
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transition: opacity 0.5s;
-}
-.img-10 img:hover {
-    opacity: 1;
-}
-
-
-/*
-.ten-images-showcase {
-    list-style: none;
-    display: block;
-}
-.img-10 {
-    background-color: #000;
-}
 .img-10 img {
     opacity: 0.7;
     width: 100%;
@@ -161,18 +153,6 @@ nav {
 .img-10 img:hover {
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-*/
 /* --------------------------------------- */
 /* FOOTER */
 /* --------------------------------------- */
