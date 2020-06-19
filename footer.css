@@ -1,0 +1,31 @@
+footer {
+    border-top: 2px solid #555;
+    background-color: #fcfcfc;
+}
+.footer-btn,
+.footer-btn p {
+    float: right;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 90%;
+}
+.footer-btn {
+    margin-right: 50px;
+}
+.footer-btn li {
+    display: inline-block;
+    float: right;
+    margin: 10px 0;
+    border: 2px solid #555;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 14px 50px 0 0;
+    font-size: 90%  
+}
+.footer-btn li a {
+    color: #17d0d8;
+    text-decoration: none;
+    font-style: italic;
+    
+}

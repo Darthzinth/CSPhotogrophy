@@ -1,0 +1,24 @@
+/* --------------------------------------- */
+/* LANDING PAGE IMG */
+/* --------------------------------------- */
+.landing-page-image {
+    background-image:url(img/Landing_Photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* --------------------------------------- */
+/* FAV IMAGES */
+/* --------------------------------------- */
+.fav-images {
+    background-color: #f7f7f7;
+}
+.fav-images img {
+    opacity: 0.7;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.fav-images img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}

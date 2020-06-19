@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/basicStructure.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/landingPage.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/aspectRatio.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/header.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/footer.css">        
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">        
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
         <title>CS Photography</title>
     </head>
     <body>
-        <header>
+        <header class="landing-page-image">
             <nav>
                 <div class="row">
                     <ul class="main-nav">
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><ion-icon class="small-icon" name="images-outline"></ion-icon>Portfolio</a></li>
+                        <li><a href="#"><ion-icon class="small-icon" name="document-text-outline"></ion-icon>About</a></li>
+                        <li><a href="#"><ion-icon class="small-icon" name="mail-outline"></ion-icon>Contact</a></li>
                     </ul>
+                    <ul class="secondary-nav js--secondary-nav">
+                        <li><a href="#"><ion-icon class="small-icon" name="images-outline"></ion-icon>Portfolio</a></li>
+                        <li><a href="#"><ion-icon class="small-icon" name="document-text-outline"></ion-icon>About</a></li>
+                        <li><a href="#"><ion-icon class="small-icon" name="mail-outline"></ion-icon>Contact</a></li>
+                    </ul>
+                      <a class="nav-icon"><ion-icon class="js--nav-icon" name="menu"></ion-icon></a>
                     <img src="resources/img/CS_logo.PNG" alt="CS Logo" class="logo"> <div class="logo-text">Photography</div>
-                    
                 </div>
             </nav>
             <div class="landing-image clearfix">
             
             </div>
         </header>
-        <section class="ten-images">
-                <div class="ten-image-text">
+        <section class="fav-images js--fav-images">
+                <div class="fav-images-text">
                 <h1>Some of my favorite images</h1>
                 </div>    
                     <div class=" col span-1-of-3 clearfix">
-                                <div style="--aspect-ratio:16/9;">
+                                <div class="fav-images" style="--aspect-ratio:16/9;">
                                     <img src="resources/img/ten_img1.jpg"  alt="">  
                                 </div>
-                                <div style="--aspect-ratio:16/9;">
+                                <div class="fav-images" style="--aspect-ratio:16/9;">
                                     <img src="resources/img/ten_img2.jpg"  alt="">
                                 </div>
-                                <div style="--aspect-ratio:16/9;">
+                                <div class="fav-images" style="--aspect-ratio:16/9;">
                                     <img src="resources/img/ten_img3.jpg"  alt="">
                                 </div>    
                     </div>
                     <div class="col span-1-of-3 clearfix">
-                                <div style="--aspect-ratio:16/9;">
+                                <div class="fav-images" style="--aspect-ratio:16/9;">
                                     <img src="resources/img/ten_img4.jpg"  alt="">
                                 </div>
-                                <div style="--aspect-ratio:16/9;">
+                                <div class="fav-images" style="--aspect-ratio:16/9;">
                                     <img src="resources/img/ten_img5.jpg"  alt="">
                                 </div>
-                                <div style="--aspect-ratio:16/9;">
+                                <div class="fav-images" style="--aspect-ratio:16/9;">
                                     <img src="resources/img/ten_img6.jpg"  alt="">
                                 </div>    
                     </div>
                     <div class="col span-1-of-3 clearfix">    
-                            <div style="--aspect-ratio:16/9;">
+                            <div class="fav-images" style="--aspect-ratio:16/9;">
                                 <img src="resources/img/ten_img7.jpg"  alt="">
                             </div>    
-                            <div style="--aspect-ratio:16/9;">
+                            <div class="fav-images" style="--aspect-ratio:16/9;">
                                 <img src="resources/img/ten_img8.jpg"  alt="">
                             </div>
-                            <div style="--aspect-ratio:16/9;">
+                            <div class="fav-images" style="--aspect-ratio:16/9;">
                                 <img src="resources/img/ten_img9.jpg"  alt="">
                             </div>
                     </div>
@@ -73,5 +82,21 @@
                 </div>
             </div>
         </footer>
+    <!--- Ion icon script --->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!--- Ion icon script --->
+    <!--- React Responsive -->
+    <script src="https://www.jsdelivr.com/package/npm/react-responsive"></script>
+    <!--- React Responsive -->
+    <!--- Shiv -->
+    <script src="https://www.jsdelivr.com/package/npm/html5shiv"></script>        
+    <!--- JQ --->     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--- JQ --->
+    <!--- Waypoint --->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <!--- Waypoint --->    
+    <script src="resources/js/hamburger.js"></script>
+       
     </body>
 </html>
