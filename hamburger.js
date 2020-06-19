@@ -10,7 +10,7 @@ $(document).ready(function(){
         offset: '40px'
     });
     $('.js--nav-icon').click(function() {
-        var nav = $('.js--secondary-nav');
+        var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon');
         
         nav.slideToggle(200);

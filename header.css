@@ -14,29 +14,27 @@
 nav {
     border-bottom: 2px solid #555;
     background-color: rgba(252, 252, 252, 0.8);
+    width: 100%;
+    margin: 10px 0;
+}
+.main-nav {
+    display: none;
+    float: right;
+    list-style: none;
+      
 }
 .main-nav li {
     display: inline-block;
-    margin-left: 25px;
-    padding: 20px 0;
-    float: right;
-    margin-top: 0;
 }
-
 .main-nav li a {
     color: #555;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
 }
 .small-icon {
     margin: 0 5px;
     font-size: 110%;
 }
 /* Sticky Nav */
-.sticky .main-nav {
-    display: none;
-}
 .sticky {
     position: fixed;
     top: 0;
@@ -44,21 +42,17 @@ nav {
     width: auto;
     max-width: 13%;
     height: auto;
-    color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px rgba(239, 239, 239, 0.88);
     border-bottom: none;
     z-index: 9999;
 }
-.secondary-nav {
-    display: none;
-}
-.sticky .secondary-nav li {
+.sticky main-nav li {
     margin-left: 0;
     float: left;
     padding: 16px 0;
     list-style: none;
 }
-.sticky .secondary-nav li a {
+.sticky .main-nav li a {
     color: #555;
     text-decoration: none;
     text-transform: uppercase;
@@ -74,7 +68,6 @@ nav {
     float: right;
     margin-top: 10px;
     cursor: pointer;
-    display: none;
 }
 .sticky .nav-icon {
     display: block;
